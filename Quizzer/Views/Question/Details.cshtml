@@ -1,0 +1,74 @@
+﻿@model Quizzer.Models.HistoryQuestion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HistoryQuestion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.createdBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.question)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.question)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.answerOne)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.answerOne)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.answerTwo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.answerTwo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.answerThree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.answerThree)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.answerFour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.answerFour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correctAnswer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correctAnswer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

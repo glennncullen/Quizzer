@@ -1,13 +1,17 @@
-﻿using System;
+﻿using Quizzer.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Quizzer.Controllers
+namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
+
+        public HistoryQuestion _hEntities = new HistoryQuestion();
+
         public ActionResult Index()
         {
             return View();
@@ -17,7 +21,7 @@ namespace Quizzer.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View(_hEntities.question);
         }
 
         public ActionResult Contact()

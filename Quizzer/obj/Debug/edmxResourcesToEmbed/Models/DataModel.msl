@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuizzerDBModelStoreContainer" CdmEntityContainer="QuizzerDBEntities">
+    <EntitySetMapping Name="GeographyQuestions">
+      <EntityTypeMapping TypeName="QuizzerDBModel.GeographyQuestion">
+        <MappingFragment StoreEntitySet="GeographyQuestion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="question" ColumnName="question" />
+          <ScalarProperty Name="answerOne" ColumnName="answerOne" />
+          <ScalarProperty Name="answerTwo" ColumnName="answerTwo" />
+          <ScalarProperty Name="answerThree" ColumnName="answerThree" />
+          <ScalarProperty Name="answerFour" ColumnName="answerFour" />
+          <ScalarProperty Name="correctAnswer" ColumnName="correctAnswer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoryQuestions">
+      <EntityTypeMapping TypeName="QuizzerDBModel.HistoryQuestion">
+        <MappingFragment StoreEntitySet="HistoryQuestion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="question" ColumnName="question" />
+          <ScalarProperty Name="answerOne" ColumnName="answerOne" />
+          <ScalarProperty Name="answerTwo" ColumnName="answerTwo" />
+          <ScalarProperty Name="answerThree" ColumnName="answerThree" />
+          <ScalarProperty Name="answerFour" ColumnName="answerFour" />
+          <ScalarProperty Name="correctAnswer" ColumnName="correctAnswer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScienceQuestions">
+      <EntityTypeMapping TypeName="QuizzerDBModel.ScienceQuestion">
+        <MappingFragment StoreEntitySet="ScienceQuestion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="question" ColumnName="question" />
+          <ScalarProperty Name="answerOne" ColumnName="answerOne" />
+          <ScalarProperty Name="answerTwo" ColumnName="answerTwo" />
+          <ScalarProperty Name="answerThree" ColumnName="answerThree" />
+          <ScalarProperty Name="answerFour" ColumnName="answerFour" />
+          <ScalarProperty Name="correctAnswer" ColumnName="correctAnswer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="QuizzerDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="historyHighScore" ColumnName="historyHighScore" />
+          <ScalarProperty Name="historyTime" ColumnName="historyTime" />
+          <ScalarProperty Name="scienceHighScore" ColumnName="scienceHighScore" />
+          <ScalarProperty Name="scienceTime" ColumnName="scienceTime" />
+          <ScalarProperty Name="geographyHighScore" ColumnName="geographyHighScore" />
+          <ScalarProperty Name="geographyTime" ColumnName="geographyTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
